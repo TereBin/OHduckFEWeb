@@ -1,10 +1,13 @@
 name: Deploy to GitHub Pages
 
+# main 브랜치 push 이벤트 감지
 on:
   push:
+    branches:
+      - main
     paths:
-      - 'public/events.json'  # events.json이 변경될 때만 실행
-      - 'vite.config.js'      # 필요 시 포함
+      - 'public/events.json'  # events.json 수정 시만 트리거
+      - 'vite.config.js'      # base 경로 변경 시 필요
       - 'package.json'
 
 jobs:
@@ -14,6 +17,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          persist-credentials: false  # gh-pages 브랜치 push 시 인증 문제 방지
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -30,4 +35,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v5
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./dist       # Vite 빌드 결과물
+          publish_branch: gh-pages  # 배포 대상 브랜치
