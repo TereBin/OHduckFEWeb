@@ -1,0 +1,66 @@
+[
+  {
+    "id": "1",
+    "title": "코스튬 퍼레이드 & 포토타임",
+    "start": "2025-09-23T15:00",
+    "end": "2025-09-23T15:50",
+	"location" : "지구별 무대",
+	"linkToLineUp": false
+  },
+  {
+    "id": "2",
+    "title": "애니메이션 버스킹 콘서트 with 음악 스트리머",
+    "start": "2025-09-23T15:00",
+    "end": "2025-09-23T16:00",
+	"location" : "삼천리 대극장",
+	"linkToLineUp": false
+  },
+  {
+    "id": "3",
+    "title": "애니송 EDM 댄스타임",
+    "start": "2025-09-23T16:00",
+    "end": "2025-09-23T17:30",
+	"location" : "삼천리 대극장",
+	"linkToLineUp": false
+  },
+  {
+	  "id" : "4",
+	  "title" : "코스프레 패션쇼",
+	  "start" : "2025-09-23T17:00",
+	  "end" : "2025-09-23T17:40",
+	  "location" : "지구별 무대",
+	  "linkToLineUp": true
+  },
+  {
+	  "id" : "5",
+	  "title" : "버츄얼 콘서트",
+	  "start" : "2025-09-23T18:00",
+	  "end" : "2025-09-23T18:55",
+	  "location" : "삼천리 대극장",
+	  "linkToLineUp": false
+  },
+  {
+	  "id" : "6",
+	  "title" : "코스프레 댄스 경연대회",
+	  "start" : "2025-09-23T19:00",
+	  "end" : "2025-09-23T20:45",
+	  "location" : "삼천리 대극장",
+	  "linkToLineUp": true
+  },
+  {
+	  "id" : "7",
+	  "title" : "애니송 미러볼 댄스타임",
+	  "start" : "2025-09-23T21:00",
+	  "end" : "2025-09-23T22:00",
+	  "location" : "지구별 무대",
+	  "linkToLineUp": false
+  },
+  {
+	  "id" : "8",
+	  "title" : "테스트용 일정",
+	  "start" : "2025-09-23T05:00",
+	  "end" : "2025-09-23T07:40",
+	  "location" : "지구별 무대",
+	  "linkToLineUp": true
+  }
+]
